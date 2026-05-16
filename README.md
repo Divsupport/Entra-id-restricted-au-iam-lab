@@ -77,7 +77,7 @@ So I will be working on this project or lab on the Entra ID space on the Entra.m
 
 
 👤 Overview of the Microsoft Entra admin center: <br/>
-<img src="images/step 1.jpg" height="80%" width="80%" alt="Create Users"/>
+<img src="Images/step 1.jpg"/>
 <br />
 <br />
 
