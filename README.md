@@ -69,7 +69,55 @@ Regional IAM Structure <br/>
 
 <h2>🚀 Project Walk-through</h2>
 
-<p align="center">
+<p align="center"> <br>
+
+So I will be working on this project or lab on the Entra ID space on the Entra.microsoft.com  or Portal.azure.com so my first plan is:
+
+1) Create 2 users called Bob Jones and Greg Johnson on the Microsoft Entra admin center.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
