@@ -69,7 +69,7 @@ Regional IAM Structure <br/>
 
 <h2>🚀 Project Walk-through</h2>
 
-<p align="center"> <br>
+<p align="center">
 
 So I will be working on this project or lab on the Entra ID space on the Entra.microsoft.com  or Portal.azure.com so my first plan is:
 
