@@ -105,9 +105,23 @@ I will go to Next: Properties
 
 After establishing the core identity parameters (UPN and Display Name), the next phase involves enriching the user profile with organizational metadata. This metadata is critical for Role-Based Access Control (RBAC), auditing, and dynamic group assignments.To align with corporate identity hierarchies, Bob Jones's profile is configured with a high-level engineering title, establishing him as the primary administrator of the cloud tenant environment.
 
+ <br />
+
+<img src="Images/step 6.jpg"/> <br />
+
+<img src="Images/step 7.jpg"/> <br />
 
 
+For this phase of the lab, I navigated to the Assignments tab to configure the necessary permissions matching Bob Jones's engineering profile. To avoid over-provisioning the account with global access, I clicked + Add role and selected the Hybrid Identity Administrator role instead of Global Administrator. This specific role gives Bob the required technical capability to manage corporate authentication policies, directory sync features, and identity infrastructure configurations without granting unnecessary control over non-identity systems like company billing, SharePoint data, or Exchange email routing.
 
+
+<img src="Images/step 8.jpg"/> <br />
+
+This is the summary of the user creation so i click on create and it will create Bob as a user.
+
+ <br />
+
+<img src="Images/step 9.jpg"/> <br />
 
 
 
