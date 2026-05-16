@@ -222,15 +222,34 @@ Bob Jones is now successfully registered, but his Scope column explicitly reads 
 
 <img src="Images/step 29.jpg"/> <br />
 
+- Group Type (Security): I selected Security because this group’s primary purpose is to manage permissions and access control boundaries. It functions as a secure bucket to hold our local users so their identities can be governed collectively.
+- To complete the setup of the NY-Staff-Group, I clicked on the Members link to explicitly populate the group. For this enterprise scenario, I added five group members consisting of regular New York branch employees, including Greg Johnson. By manually assigning these five members to this specific security group, I have established the target workforce container that Bob Jones will manage, allowing him to efficiently administer permissions, policies, and access controls for all five users simultaneously rather than updating their accounts individually.
+- Group Name (NY-Staff-Group): I chose a clear, descriptive, and standardized naming convention so any IT administrator can immediately recognize that this group belongs specifically to the New York branch operations.
+- Group Description: I added a professional definition: "Security group containing all regional employees located in the New York branch office, managed by the NY Hybrid Identity Administrator." This keeps the directory well-documented and auditable.
+- Microsoft Entra Roles (No): I kept this toggle set to No. Enabling this feature creates a specialized, highly privileged group that can bypass standard security controls to assign massive tenant-wide admin roles. Because this group is strictly meant for standard, everyday employees (like Greg Johnson), turning this on would introduce an unnecessary security risk.
+- Membership Type (Assigned): I chose Assigned over Dynamic user to keep membership strictly manual. This ensures that our newly appointed local admin, Bob Jones, has direct, hands-on control over explicitly adding or removing staff from his regional team, rather than letting automated cloud rules handle it.
 
+Why i picked no owner for this security Group?
 
+- For this deployment, the group owner field was intentionally left blank. In Microsoft Entra ID, assigning a group owner delegates member management to a specific user without giving them a full IT admin role.
+- However, leaving this blank is the best approach here because Bob Jones already has the Hybrid Identity Administrator role scoped directly to the NY-Administrative-Unit. Once this security group is placed inside that unit, Bob automatically gets full management power over it through his existing role. Assigning an explicit owner is redundant, and leaving it blank keeps the security model clean, professional, and entirely controlled by your established Administrative Unit framework.
 
+<img src="Images/step 30.jpg"/> <br />
 
+With the group configuration finalized and the five regional employees successfully added as members, I hit create and returned to the main All groups dashboard. As circled in red, the NY-Staff-Group now appears live in the directory.
 
+This view confirms that our structural backbone is officially active, showcasing the exact settings selected for our deployment strategy: the group is registered correctly as a Security type, and its membership type is explicitly set to Assigned (manual mode) to preserve Bob Jones's direct administrative control. The group is now fully prepared to be linked to the NY-Administrative-Unit so our delegated regional management model can take effect.
 
+<img src="Images/step 31.jpg"/> <br />
 
+- To finalize the regional management boundary, I navigated back to the NY-Administrative-Unit, clicked on the Groups blade under the manage menu, and clicked + Add. On the flyout selection panel, I selected NY-Staff-Group from the available directory objects.
+- By clicking the blue Select button at the bottom, this security group is officially placed inside the New York Administrative Unit container. This critical architectural step links the target workforce directly to Bob Jones's scoped administrative powers. Now, because the group resides within his assigned unit, Bob holds full regional authority to manage this group and its members, successfully completing the secure, decentralized identity governance model. 
 
+<img src="Images/step 32.jpg"/> <br />
+<img src="Images/step 33.jpg"/> <br />
 
+To verify that the configuration was successful, I opened the overview page for the newly assigned NY-Staff-Group directly from within the administrative unit context. This dashboard serves as final confirmation that the group is fully operational and populated according to project specifications.
+As highlighted by the red underlines and menu selections on this screen:
 
 
 
