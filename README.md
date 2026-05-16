@@ -88,7 +88,22 @@ This image is the Microsoft Entra admin portal, and you can see me as a global a
 
 Before running large automation scripts, it is best practice to manually create test users within the GUI portal. This ensures that the tenant domain configuration, licensing environment, and basic identity parameters are functioning correctly. 
 
+ <br />
 
+ <img src="Images/step 4.jpg"/> <br />
+
+ 
+- I navigated to the Microsoft Azure Portal (portal.azure.com) -> Microsoft Entra ID -> Users -> Create new user. 
+- User Principal Name (UPN): Set to Bobjones@syskko.onmicrosoft.com. This serves as the user's primary cloud login identity and email routing prefix.
+- Mail Nickname: Automatically derived from the UPN prefix (Bobjones) to handle mail routing alias properties.
+- Display Name: Set to Bobjones for clear directory identification across Microsoft 365 services (Teams, Outlook). 
+- Password Management: A strong, custom temporary password was manually assigned, and the account status was explicitly toggled to Account enabled ($true) to allow immediate authentication testing post-creation.
+
+I will go to Next: Properties
+
+<img src="Images/step 5.jpg"/> <br />
+
+After establishing the core identity parameters (UPN and Display Name), the next phase involves enriching the user profile with organizational metadata. This metadata is critical for Role-Based Access Control (RBAC), auditing, and dynamic group assignments.To align with corporate identity hierarchies, Bob Jones's profile is configured with a high-level engineering title, establishing him as the primary administrator of the cloud tenant environment.
 
 
 
