@@ -72,7 +72,7 @@ Regional IAM Structure <br/>
 <p align="center">
 
 👤 Create Bob Jones and Greg Johnson accounts in Microsoft Entra ID: <br/>
-<img src="images/step2.png" height="80%" width="80%" alt="Create Users"/>
+<img src="images/step2.png" height="80%" width="80%"/>
 <br />
 <br />
 
