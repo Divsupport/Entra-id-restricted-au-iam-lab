@@ -75,8 +75,7 @@ So I will be working on this project or lab on the Entra ID space on the Entra.m
 
 1) Create 2 users called Bob Jones and Greg Johnson on the Microsoft Entra admin center.
 
-
-👤 Overview of the Microsoft Entra admin center: <br/>
+👤 Overview of the Microsoft Entra admin center: <br/><br/>
 <img src="Images/step 1.jpg"/>
 <br />
 <br />
