@@ -145,6 +145,59 @@ To fix this security flaw and enforce the Principle of Least Privilege, I execut
 <img src="Images/step 14.jpg"/> <br />
 <img src="Images/step 15.jpg"/> <br />
 
+To limit Bob Jones's administrative power strictly to New York, I navigated to Administrative units and started creating the management boundary for this project.
+
+- Name Configuration: I named the unit NY-Administrative-Unit to clearly state its regional purpose.
+- The Critical Choice (Restricted Management Administrative Unit): I selected No for the "Restricted management administrative unit" option.
+
+Choosing No is the standard approach for a regional office setup. It means that while Bob Jones will be given the Hybrid Identity Administrator role scoped inside this specific New York unit to manage local users, higher-level tenant administrators (like the main Global Admin) can still see, manage, and help troubleshoot these New York accounts if needed. This keeps the New York team managed locally by Bob, without locking out central IT support.
+
+<img src="Images/step 16.jpg"/> <br />
+
+I chose not to assign any roles and skipped directly to the next step.
+Leaving this blank is a deliberate security decision for this project. Assigning a role at this stage applies it globally across the entire tenant directory. To ensure Bob Jones's administrative privileges are strictly confined to the New York branch, his role will be assigned directly inside the completed NY-Administrative-Unit container later, rather than during this initial creation wizard.
+
+<img src="Images/step 17.jpg"/> <br />
+
+Now create 
+
+<img src="Images/step 18.jpg"/> <br />
+
+Now the New York Adminstrative unit have been created.
+
+<img src="Images/step 19.jpg"/> <br />
+
+Now that the NY-Administrative-Unit is created, I need to add Bob Jones here so his admin powers only work inside this specific New York box.
+Here is exactly what I will do on this screen:
+
+<img src="Images/step 20.jpg"/> <br />
+
+
+- First, I will stay on this Users tab and click + Add member. I will search for Bob Jones and add him to the unit. This places his account inside the New York management boundary.
+
+<img src="Images/step 21.jpg"/> <br />
+
+<img src="Images/step 22.jpg"/> <br />
+
+- Next, I will look at the left-hand menu and click on Roles and administrators. Inside that menu, I will find the Hybrid Identity Administrator role on the search bar and click on it.
+
+<img src="Images/step 23.jpg"/> <br />
+
+<img src="Images/step 24.jpg"/> <br />
+
+- I will click "+ Add assignments": I will click the button circled in red to start the assignment process.
+- Select Bob Jones: In the pane that pops up, I will search for and select Bob Jones as the user.
+- Because this assignment is being built inside the NY-Administrative-Unit container, the system will automatically restrict his Hybrid Identity Administrator powers.
+
+ <img src="Images/step 25.jpg"/> <br />
+
+
+
+
+
+
+
+
 
 
 
