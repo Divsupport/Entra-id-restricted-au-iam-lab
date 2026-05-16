@@ -136,9 +136,14 @@ After creating the account, I opened Bob Jones's Overview page in Microsoft Entr
 During my security audit of Bob Jones's profile, i went to assigned roles and i noticed his role Scope was set to Directory. For this project, Bob is strictly supposed to be a regional administrator for New York. Leaving his scope as "Directory" is a major security risk because it gives him administrative power over the entire company instead of just his assigned region.
 To fix this security flaw and enforce the Principle of Least Privilege, I executed the following steps:
 
+- Stripping the Global Power: On this Assigned roles screen, I clicked the Remove button next to his role. This completely took away his tenant-wide "Directory" powers, turning him back into a regular user.
+- Applying Regional Scope: Instead of assigning roles directly to his user profile, I navigated out of this menu and opened the NY-Administrative-Unit that I created for the project.
+- Assigning the Scoped Role: Inside the New York AU settings, I went to Roles and administrators, selected the admin role, and assigned it to Bob Jones there. 
 
-
-
+<img src="Images/step 12.jpg"/> <br />
+<img src="Images/step 13.jpg"/> <br />
+<img src="Images/step 14.jpg"/> <br />
+<img src="Images/step 15.jpg"/> <br />
 
 
 
