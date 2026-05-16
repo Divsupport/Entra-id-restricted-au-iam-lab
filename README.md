@@ -80,7 +80,13 @@ So I will be working on this project or lab on the Entra ID space on the Entra.m
 <br />
 <br />
 
-- This image is the Microsoft Entra admin portal, and you can see me as a global admin as Divine Oguamanam, and my domain is syskko.onmicrosoft.com. The global admin have total access to every single setting, from reading every email to deleting the entire company directory. And there are the only ones who can assign roles to other people, manage billing/licenses, and reset passwords for other administrators. 
+This image is the Microsoft Entra admin portal, and you can see me as a global admin as Divine Oguamanam, and my domain is syskko.onmicrosoft.com. The global admin have total access to every single setting, from reading every email to deleting the entire company directory. And there are the only ones who can assign roles to other people, manage billing/licenses, and reset passwords for other administrators. 
+
+<img src="Images/step 2.jpg"/> <br />
+
+<img src="Images/step 3.jpg"/> <br />
+
+Before running large automation scripts, it is best practice to manually create test users within the GUI portal. This ensures that the tenant domain configuration, licensing environment, and basic identity parameters are functioning correctly. 
 
 
 
