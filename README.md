@@ -191,17 +191,36 @@ Here is exactly what I will do on this screen:
 
  <img src="Images/step 25.jpg"/> <br />
 
+On this screen, I am configuring how Bob Jones's Hybrid Identity Administrator role behaves over time.
 
+Before hitting assign, there are two key tasks to handle on this page:
 
+- Fixing the Error (Enter Justification): The system shows a red warning because the Enter justification box is mandatory. For this lab, I will type a direct reason into the box, such as: "Assigning regional identity permissions for the New York branch deployment."
+- I selected Active instead of Eligible
+Understanding these two options is a fundamental concept in modern cloud identity management (Privileged Identity Management / PIM):
 
+- Eligible Assignment: The user does not have the admin permissions during their regular routine. Instead, they are simply "allowed" to have them. If they need to do admin work, they must manually request activation, type a reason, and pass an extra MFA check. The permissions then automatically turn off after a few hours. This is the gold standard for security because it eliminates standing access.
+- Active Assignment: The admin permissions are turned on immediately and stay on 24/7. The user can jump straight into admin tasks without waiting or going through an activation process.
+  
+Why I Picked Active for This Project I chose Active for Bob's profile to create a permanent, dedicated regional account for this lab environment. Because Bob is 
 
+working strictly within the safe boundaries of the NY-Administrative-Unit, his permanent "Active" state is isolated from the rest of the company. This ensures he can immediately execute day-to-day management tasks for New York users without encountering the repetitive overhead of requesting access every single day.
 
+<img src="Images/step 26.jpg"/> <br />
 
+Bob Jones is now successfully registered, but his Scope column explicitly reads NY-Administrative-Unit instead of Directory. This means his management keys are entirely locked inside the New York container. He can fully manage the users and identity assets belonging to that specific branch, but he has absolutely no administrative power over any other department or region in the company, successfully achieving a true least-privilege deployment. 
 
+- In cloud management, you don't want to spend your entire day assigning software licenses, setting folder permissions, or granting admin rights to users one by one. If you have 50 employees in New York, doing everything 50 separate times takes too long and invites mistakes. Instead, I will create a Security Group, drop all 50 New York employees inside it, and lock that entire group into your NY-Administrative-Unit. Now, Bob Jones can manage all 50 people instantly by controlling that single group container. It is called a Security group because its main job is managing safety boundaries and access controls for the network.
+- With the administrative roles established, the next crucial step is creating the structural "backbone" for the New York workforce. Managing users one by one in an enterprise is highly inefficient and prone to mistakes. Creating a dedicated security group allows for streamlined, bulk management.
+- On this configuration screen, I have filled out the essential properties for this new organizational asset:
 
+<img src="Images/step 27.jpg"/> <br />
 
+<img src="Images/step 28.jpg"/> <br />
 
+- Click "New group": Once this menu fully loads, there will be a button at the top of the workspace labeled + New group. Clicking that will open up the creation panel.
 
+<img src="Images/step 29.jpg"/> <br />
 
 
 
