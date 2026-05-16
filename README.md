@@ -123,9 +123,18 @@ This is the summary of the user creation so i click on create and it will create
 
 <img src="Images/step 9.jpg"/> <br />
 
+<img src="Images/step 10.jpg"/> <br />
 
+After creating the account, I opened Bob Jones's Overview page in Microsoft Entra ID to make sure everything worked correctly. This page shows the real-world status of the user. 
 
+- Account is Active: The page shows Account status: Enabled, which means Bob can log in right away.
+- Unique ID Created: Entra ID gave him a unique Object ID (771256e2...). The system uses this long number to identify Bob behind the scenes, ensuring his account never gets mixed up with anyone else.
+- Role is Attached: It shows Assigned roles: 1. This proves that his Hybrid Identity Administrator role successfully attached to his account when it was made.
 
+<img src="Images/step 11.jpg"/> <br />
+
+During my security audit of Bob Jones's profile, i went to assigned roles and i noticed his role Scope was set to Directory. For this project, Bob is strictly supposed to be a regional administrator for New York. Leaving his scope as "Directory" is a major security risk because it gives him administrative power over the entire company instead of just his assigned region.
+To fix this security flaw and enforce the Principle of Least Privilege, I executed the following steps:
 
 
 
