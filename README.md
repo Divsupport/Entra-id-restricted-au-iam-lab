@@ -341,31 +341,39 @@ Inside the NY-Staff-Group panel, I am clicking on Members from the left-hand men
 
 To test my permissions, I clicked Add members and searched for an employee named brunocapson. The system located the user account successfully under the search box. I am now clicking the checkbox next to his name and selecting the blue Select button at the bottom of the blade to add him to the NY-Staff-Group. 
 
+<img src="Images/step 51.jpg"/> <br />
 
+The direct members list updates immediately to show brunocapson as a newly added user, raising the group count to six total members. This successful update proves that Bob Jones can actively manage security group memberships within his assigned administrative container.
+Now, I need to test his restrictions. To do this, I will navigate back to the NY-Administrative-Unit group menu and open the NY-Marketing-Group to see if his admin role is blocked from changing a Microsoft 365 group roster.
 
+<img src="Images/step 52.jpg"/> <br />
 
+Inside the NY-Marketing-Group, I am navigating to the Members section on the left menu, just like I did before.
+Once the members page opens, I will look closely at the Add members button at the top. Because this is a Microsoft 365 group and Bob is only an administrative unit manager, the system should prevent him from adding people. The button will be grayed out when clicked.
 
+This successfully completes Bob's validation test, proving that his administrative powers are strictly confined to infrastructure security groups and blocked from touching collaborative team groups.
 
+To begin the second half of the validation phase, I opened a fresh InPrivate browser window and logged in using Greg Johnson's credentials. Greg holds no global directory roles within the company tenant, which means his access relies entirely on direct object ownership. From the main dashboard, I am clicking on the Microsoft Entra ID service icon to navigate to the identity portal and verify his localized management permissions.
 
+<img src="Images/step 53.jpg"/> <br />
 
+<img src="Images/step 54.jpg"/> <br />
 
+Once inside the Microsoft Entra ID overview page, I bypassed the Administrative Units section entirely since Greg is not a directory administrator. Instead, I navigated to the left-hand sidebar menu under the Manage section and clicked directly on Groups. This opens the central directory group list, where I can test Greg's ability to manage his specific team. 
 
+<img src="Images/step 55.jpg"/> <br />
 
+<img src="Images/step 56.jpg"/> <br />
 
+<img src="Images/step 57.jpg"/> <br />
 
+Inside the Members blade of the NY-Marketing-Group, the Add members command button at the top of the workspace is fully illuminated, active, and clickable for me. I clicked the button, searched for an unassigned user account called sarah lee within the tenant directory, and successfully committed the selection.
+The direct members roster updated instantly to incorporate the new employee. This successful operation validates that explicit object ownership over a Microsoft 365 group completely bypasses the need for global or regional directory roles, enabling delegated business leaders to manage their own team boundaries directly.
 
+<img src="Images/step 58.jpg"/> <br />
 
-
-
-
-
-
-
-
-
-
-
-
+To finish my testing, I went back to the main groups list and opened the NY-Staff-Group. When I clicked on Members, the Add members button was completely grayed out and did not work.
+This is exactly what should happen and It proves that Greg has zero power over groups he does not own. This test confirms that this security boundaries work perfectly, keeping a department leader's controls strictly inside their own team space.
 
 ---
 
