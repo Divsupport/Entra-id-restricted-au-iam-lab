@@ -293,6 +293,59 @@ NY-Staff-Group operating as a standard Security group for general infrastructure
 
 Opening the NY-Marketing-Group dashboard confirms the group profile is fully built and functioning as intended. The overview blade displays our custom description identifying it as a collaboration hub managed by Greg Johnson, and the basic information field notes a total of three active user members. This screen verifies that the object properties are complete, the type is correctly set to Microsoft 365, and the group stands ready for daily department operations.
 
+# Validation and Testing 
+
+To prove that the regional administration framework works correctly, I initiated a validation phase to test the actual permissions of our scoped users. This testing process ensures that the access boundaries configured within the Microsoft Entra tenant actively enforce the principle of least privilege in a live environment. By logging into separate sessions as Bob Jones and Greg Johnson, I can verify that their administrative capabilities strictly match their assigned organizational roles.
+
+<img src="Images/step 39.jpg"/> <br />
+
+I will log into the Azure Portal using Bob Jones's credentials through the windows incognito.
+
+<img src="Images/step 40.jpg"/> <br />
+
+It will require you to set a new password 
+
+<img src="Images/step 41.jpg"/> <br />
+
+It will prompt you to install the MS Authenticator
+
+<img src="Images/step 42.jpg"/> <br />
+
+I will use the QR code on the ms authenticator app on my phone to synchronized to bob credentials on my device.
+
+<img src="Images/step 43.jpg"/> <br />
+
+<img src="Images/step 44.jpg"/> <br />
+
+I have successfully logged in using Bob Jones's credentials, which can be verified by his user principal name highlighted in the top-right corner of the portal. To begin validating his scoped administrative permissions, I am clicking on the Microsoft Entra ID service icon from the dashboard to enter the identity management console.
+
+<img src="Images/step 45.jpg"/> <br />
+
+<img src="Images/step 46.jpg"/> <br />
+
+Once inside the Microsoft Entra ID dashboard, I navigated to the left-hand sidebar menu, clicked on Administrative units, and selected the NY-Administrative-Unit. This opens the specific management container where Bob's regional permissions are active, allowing me to view the users and groups assigned to his care.
+
+<img src="Images/step 47.jpg"/> <br />
+
+Now that I am inside the NY-Administrative-Unit dashboard, I need to look at the groups that Bob Jones has the authority to manage. From the left-hand navigation menu under the Manage section, I am clicking on Groups to open the list containing both our regional security group and the marketing collaboration group. 
+
+<img src="Images/step 48.jpg"/> <br />
+
+From the list of available groups inside the unit, I am clicking directly on the NY-Staff-Group. Since this is a standard Security group located within Bob's administrative boundary, opening it will allow me to test if his Hybrid Identity Administrator role grants him the power to manage its membership.
+
+<img src="Images/step 49.jpg"/> <br />
+
+Inside the NY-Staff-Group panel, I am clicking on Members from the left-hand menu and then selecting the Add members button at the top. To test Bob's scoped admin powers, I will search for a user who isn't in the group yet and add them. This action should process successfully, proving that Bob's role allows him to manage standard security group rosters within his designated Administrative Unit. 
+
+<img src="Images/step 50.jpg"/> <br />
+
+To test my permissions, I clicked Add members and searched for an employee named brunocapson. The system located the user account successfully under the search box. I am now clicking the checkbox next to his name and selecting the blue Select button at the bottom of the blade to add him to the NY-Staff-Group. 
+
+
+
+
+
+
 
 
 
