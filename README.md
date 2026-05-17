@@ -251,6 +251,50 @@ This view confirms that our structural backbone is officially active, showcasing
 To verify that the configuration was successful, I opened the overview page for the newly assigned NY-Staff-Group directly from within the administrative unit context. This dashboard serves as final confirmation that the group is fully operational and populated according to project specifications.
 As highlighted by the red underlines and menu selections on this screen:
 
+- Successful Member Enrollment: The User(s) metrics clearly display a count of 5, confirming that the five regional New York employees have been successfully added to this manual security container.
+- Administrative Context: By navigating to the Members blade (circled on the left menu), an administrator can audit the exact identities of these five individuals.
+- Validation of the Architecture: Because this group now has a "Total members" count of 5 and sits natively inside the NY-Administrative-Unit, the delegation loop is complete. Bob Jones, using his scoped Hybrid Identity Administrator role, now possesses full, isolated visibility and management authority over these five specific users via this unified group container.
+
+To provide deep visibility and complete accountability within this infrastructure deployment, I clicked on the Members blade to verify the specific identities populated inside the NY-Staff-Group.
+This dashboard displays the active roster of the 5 group members explicitly assigned to the New York branch container:
+
+- Justin Blakeley
+- mercylasson
+- myriasanchez
+- Robert Kim
+- Sarah Lee
+
+By documenting this roster, I can prove that all target users are correctly categorized with the User object type and hold standard Member user types. This clean list represents the exact workforce population that our local administrator, Bob Jones, can now actively oversee and manage. Because this group is nested within the NY-Administrative-Unit, Bob has full delegated authority over these specific individuals' identities, properties, and access rights without ever possessing global control over the rest of the enterprise tenant.
+
+# Deploying the Departmental Marketing Group with Delegated Ownership
+
+To demonstrate a decentralized, department-led collaboration model within the regional architecture, I first created Greg Johnson as a standard directory user, intentionally leaving all global administrative roles unassigned. With Greg's standard account established, I proceeded to build a new Microsoft 365 group named NY-Marketing-Group to serve as a collaboration hub for the local marketing team. During the creation process, I bypassed the traditional role-based assignment framework and explicitly added Greg Johnson as the Group Owner.
+By designating Greg as the owner of this Microsoft 365 group, he is granted the direct capability to manage the group's internal roster, add or remove marketing members, and oversee their shared tools without requiring an elevated IT directory role. This specific configuration allows the group to be placed safely under the NY-Administrative-Unit umbrella for regional visibility, while ensuring that daily departmental administration is successfully offloaded to Greg himself, perfectly showcasing a real-world blend of centralized structural oversight and localized data ownership.
+
+<img src="Images/step 34.jpg"/> <br />
+
+I clicked the Create button to officially make Greg Johnson's new account. After his profile was live, I went into the NY-Administrative-Unit and added him as a member.
+
+<img src="Images/step 35.jpg"/> <br />
+
+Now the Greg johnson is on the NY AU so i will now create a Microsoft 365 group Marketing Group and make Greg the owner of the group.
+
+<img src="Images/step 36.jpg"/> <br />
+
+I configured a new Microsoft 365 group named NY-Marketing-Group directly within the New York Administrative Unit interface to serve as the regional team's communication hub. I assigned Greg Johnson as the group owner to delegate roster management, added three initial team members, and kept Entra roles disabled to maintain standard security practices. Clicking Create finalized this setup, successfully blending regional structural boundaries with localized departmental data ownership.
+
+<img src="Images/step 37.jpg"/> <br />
+
+The Groups menu of the NY-Administrative-Unit confirms that the NY-Marketing-Group is now active and properly placed within the regional container. This view displays our two distinct group strategies working side-by-side: the 
+
+NY-Staff-Group operating as a standard Security group for general infrastructure control, and the newly added NY-Marketing-Group running as a Microsoft 365 group for team collaboration. Because this new group is positioned inside the unit and has its ownership delegated to Greg Johnson, the regional setup successfully supports both secure administrative boundaries and local department management.
+
+<img src="Images/step 38.jpg"/> <br />
+
+Opening the NY-Marketing-Group dashboard confirms the group profile is fully built and functioning as intended. The overview blade displays our custom description identifying it as a collaboration hub managed by Greg Johnson, and the basic information field notes a total of three active user members. This screen verifies that the object properties are complete, the type is correctly set to Microsoft 365, and the group stands ready for daily department operations.
+
+
+
 
 
 
