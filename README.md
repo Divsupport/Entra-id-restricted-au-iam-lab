@@ -6,7 +6,7 @@ Built by <span style="color:#0078D4;">Divine Oguamanam</span>
 
 ---
 
-<h2>📖 Description</h2>
+<h2> Description</h2>
 
 This project demonstrates the implementation of a secure Identity and Access Management (IAM) governance model using Microsoft Entra ID Administrative Units (AUs), scoped Role-Based Access Control (RBAC), Security Groups, and Microsoft 365 delegated ownership.
 
@@ -14,7 +14,7 @@ The lab simulates a real-world enterprise environment where regional administrat
 
 In this project, I created a New York Administrative Unit, assigned a scoped Hybrid Identity Administrator role to a regional administrator, deployed Security and Microsoft 365 groups, and validated administrative boundaries between delegated administrators and group owners.
 
-<h3>🔑 Key Focus Areas</h3>
+<h3> Key Focus Areas</h3>
 
 - Least Privilege
 - Scoped Administration
@@ -38,7 +38,7 @@ In this project, I created a New York Administrative Unit, assigned a scoped Hyb
 
 ---
 
-<h2>💻 Environment Used</h2>
+<h2>Environment Used</h2>
 
 - <b>Microsoft Entra ID Tenant</b>
 - <b>Windows 11</b>
@@ -46,7 +46,7 @@ In this project, I created a New York Administrative Unit, assigned a scoped Hyb
 
 ---
 
-<h2>🎯 Project Objectives</h2>
+<h2> Project Objectives</h2>
 
 - Create a restricted Administrative Unit for New York users
 - Assign scoped Hybrid Identity Administrator permissions
@@ -56,16 +56,6 @@ In this project, I created a New York Administrative Unit, assigned a scoped Hyb
 - Validate permission boundaries between administrators and group owners
 - Simulate enterprise IAM governance architecture
 
----
-
-<h2>🏗️ Architecture Overview</h2>
-
-<p align="center">
-Regional IAM Structure <br/>
-<img src="images/step1.png" height="80%" width="80%" alt="Architecture Overview"/>
-</p>
-
----
 
 <h2>🚀 Project Walk-through</h2>
 
@@ -75,7 +65,7 @@ So I will be working on this project or lab on the Entra ID space on the Entra.m
 
 1) To create 2 users called Bob Jones and Greg Johnson on the Microsoft Entra admin center.
 
-👤 Overview of the Microsoft Entra admin center: <br/><br/>
+ Overview of the Microsoft Entra admin center: <br/><br/>
 <img src="Images/step 1.jpg"/>
 <br />
 <br />
@@ -405,7 +395,7 @@ This is exactly what should happen and It proves that Greg has zero power over g
 
 ---
 
-<h2>📚 Lessons Learned</h2>
+<h2> Lessons Learned</h2>
 
 This project reinforced the importance of restricting administrative access to only the resources required for a user's responsibilities.
 
@@ -415,7 +405,7 @@ Through validation testing, the project confirmed that delegated ownership and s
 
 ---
 
-<h2>🚧 Future Improvements</h2>
+<h2> Future Improvements</h2>
 
 Future phases of this project will include:
 
